@@ -1,0 +1,31 @@
+{
+  "name": "angularjs-grid-view",
+  "version": "1.0.0",
+  "homepage": "https://chanhnv@bitbucket.org/nexaplus/angularjs-grid-view.git",
+  "author": {
+    "name": "",
+    "email": "",
+    "web": ""
+  },
+   "main": [
+    "release/dataTable.js",
+    "release/dataTable.css"
+  ],
+  "description": "A feature-rich but lightweight ES6 AngularJS Data Table crafted for large data sets!",
+  "keywords": [
+    "data-table",
+    "material-design",
+    "angular",
+    "table",
+    "grid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "jspm_packages",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
