@@ -1420,6 +1420,9 @@
             var label = $elm[0].querySelector('.dt-header-cell-label'),
                 cellScope = void 0;
 
+            if (ctrl.column.isFreeze) {
+              $elm[0].style = Object.assign({}, $elm[0].style, ctrl.column.css);
+            }
             if (ctrl.column.headerTemplate || ctrl.column.headerRenderer) {
               cellScope = ctrl.options.$outer.$new(false);
 
