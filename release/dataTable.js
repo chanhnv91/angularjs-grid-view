@@ -1421,10 +1421,10 @@
                 cellScope = void 0;
 
             if (ctrl.column.isFreeze) {
-              $elm[0].style['position'] = ctrl.column.position;
-              $elm[0].style['left'] = ctrl.column.left;
-              $elm[0].style['background-color'] = ctrl.column['background-color'];
-              $elm[0].style['z-index'] = ctrl.column['z-index'];
+              $elm[0].style['position'] = ctrl.column.css.position;
+              $elm[0].style['left'] = ctrl.column.css.left;
+              $elm[0].style['background-color'] = ctrl.column.css['background-color'];
+              $elm[0].style['z-index'] = ctrl.column.css['z-index'];
             }
             if (ctrl.column.headerTemplate || ctrl.column.headerRenderer) {
               cellScope = ctrl.options.$outer.$new(false);
