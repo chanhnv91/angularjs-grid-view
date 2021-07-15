@@ -442,7 +442,8 @@
     //   styles.top = y + 'px';
     //   styles.left = x + 'px';
     // }
-    styles[CamelCase(transform)] = "translate(" + x + "px, " + y + "px)";
+    styles.top = y + 'px';
+    styles.left = x + 'px';
     styles[backfaceVisibility] = 'hidden';
   }
 
