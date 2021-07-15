@@ -1421,7 +1421,10 @@
                 cellScope = void 0;
 
             if (ctrl.column.isFreeze) {
-              $elm[0].style = Object.assign({}, $elm[0].style, ctrl.column.css);
+              $elm[0].style['position'] = ctrl.column.position;
+              $elm[0].style['left'] = ctrl.column.left;
+              $elm[0].style['background-color'] = ctrl.column['background-color'];
+              $elm[0].style['z-index'] = ctrl.column['z-index'];
             }
             if (ctrl.column.headerTemplate || ctrl.column.headerRenderer) {
               cellScope = ctrl.options.$outer.$new(false);
